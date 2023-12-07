@@ -94,7 +94,7 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-/*--------Herunder er der CSS til de høje forsider med billeder og tekst--------*/
+/*--------Herunder er der CSS til de forsider med billeder og tekst--------*/
 .forsidelang img{
     width: 100%;
     height: 850px;
@@ -105,19 +105,16 @@
     height: 850px;
     background-color: #000;
 }
-
 .forsidekort{
-    width:  100%;
+    width: 100%;
     height: 550px;
-    background-color: #8e9f99;
+    background-color: #8E9F99;
 }
-
 .forsidekort img{
     width: 100%;
     height: 550px;
     opacity: 50%;
 }
-
 /*---Herunder brugte jeg følgende fra w3schools "How TO - Position Text Over an Image"*/
 .forsidetekst{
     width: 40%;
@@ -141,7 +138,6 @@
     font-weight: 500;
     padding-bottom: 5%;
 }
-
 .korttekst{
     width: 40%;
     height: 400px;
@@ -149,23 +145,20 @@
     top: 150px;
     left: 16px;
     padding-left: 3%;
-
 }
 .korttekst h1{
-    font-family: 'Cabin Sketch',sans-serif;
-    color: white;
+    font-family: 'Cabin Sketch', sans-serif;
+    color: #fff;
     font-size: 110px;
     word-wrap: break-word;
     font-weight: bold;
 }
-
 .korttekst h2{
-    font-family: 'Montserrat',sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 25px;
     color: #fff;
     font-weight: 500;
     padding-bottom: 5%;
-
 }
 /*---Herunder er til selve knappen i toppen af vores sider---*/
 button {
@@ -221,58 +214,109 @@ button {
     transition: all 0.3s ease-in;
    }
 
-/*------ Her CSS til bagsammen side - Frederik -------*/
+
+   /*------ Her CSS til bagsammen side - Frederik -------*/
 .infoside{ 
-display: flex;
-justify-content: space-evenly;
-width: 100%;
-height: 800px;
-background-color: #9C5238;
-padding-top: 100px;
-}
-.infotekst{
-    width: 40%;
-    height: 700px;
-    padding-top: 70px;
- 
-}
-.infobillede{
-    width: 35%;
-    height: 700px;
-    padding-top: 50px;
-}
-.infobillede img {
+    display: flex;
+    justify-content: space-evenly;
     width: 100%;
-    border-radius: 20px;
-}
-
-.infotekst h3{
-    font-family: 'Montserrat',sans-serif;
-    font-size: 30px;
-    color: #fff;
-}
-
-.infotekst p{
-    color: #fff;
-    font-family: "Montserrat", sans-serif;
-    font-size: 15px;
-    padding-top: 35px;
-}
-
-.tabel{
-    border-collapse: collapse;
-    width: 90%;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    height: 800px;
+    background-color: #9C5238;
+    padding-top: 100px;
+    }
+    .infotekst{
+        width: 40%;
+        height: 700px;
+        padding-top: 70px;
     
-}
+    }
+    .infobillede{
+        width: 35%;
+        height: 700px;
+        padding-top: 50px;
+    }
+    .infobillede img {
+        width: 100%;
+        border-radius: 20px;
+    }
+    
+    .infotekst h3{
+        font-family: 'Montserrat',sans-serif;
+        font-size: 30px;
+        color: #fff;
+    }
+    
+    .infotekst p{
+        color: #fff;
+        font-family: "Montserrat", sans-serif;
+        font-size: 15px;
+        padding-top: 35px;
+    }
+    
+    .tabel{
+        border-collapse: collapse;
+        width: 90%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    
+    }
+    
+    
+    .tabel td, th{
+        border: 1px solid black;
+        text-align: left;
+        padding: 10px;
+        color: #fff;
+        font-family: 'Montserrat', sans-serif;
+    }
 
 
-.tabel td, th{
-    border: 1px solid black;
-    text-align: left;
-    padding: 10px;
-    color: #fff;
-    font-family: 'Montserrat', sans-serif;
-}
-  
+
+
+
+
+
+   /*----------Herunder er der CSS til Galleri siden-------------*/
+   .billedeside{
+    width: 100%;
+    height: 2000px;
+    background-color: #9C5238;
+    display: flex;
+    justify-content: space-evenly;
+   }
+   .billedeside img{
+    height: 100%;
+    width: 100%;
+    border-radius: 3%;
+   }
+   .venstrebillede{
+    width: 32%;
+    height: 100%;
+   }
+   .midtbillede{
+    width: 32%;
+    height: 100%;
+   }
+   .højrebillede{
+    width: 32%;
+    height: 100%;
+   }
+   /*-----Herunder laver jeg CSS til selve billede boksene-----*/
+   .lillebillede{
+    width: 100%;
+    height: 200px;
+    margin-top: 2%;
+   }
+   .mellembillede{
+    width: 100%;
+    height: 300px;
+    margin-top: 2%;
+   }
+   .storbillede{
+    width: 100%;
+    height: 500px;
+    margin-top: 2%;
+   }
+   .storbillede img{
+    width: 100%;
+   }
