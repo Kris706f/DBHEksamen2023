@@ -163,6 +163,64 @@ hr {
     height: 550px;
     opacity: 50%;
 }
+/*----------------Herunder er til selve forsiden og det under --------------------*/
+.forsidegalleri{
+    width: 90%;
+    height: 850px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.venstreforside{
+    width: 45%;
+    height: 100%;
+   }
+   .højreforside{
+    width: 45%;
+    height: 100%;
+   }
+.venstreforside img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.højreforside img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+/*---------Herunder er CSS til den nederste del på forsiden---------*/
+.produktside{
+    width: 100%;
+    height: 600px;
+    background-image: url(images/butik.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.produkttekst{
+    width: 95%;
+    height: 100%;
+    padding-left: 5%;
+}
+.produkttekst h4{
+    padding-top: 20%;
+    font-size: 45px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+.produkttekst h5{
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 5%;
+}
+.produktside img{
+    width: 100%;
+    height: 100%;
+    opacity: 60%;
+}
+
+
 /*---Herunder brugte jeg følgende fra w3schools "How TO - Position Text Over an Image"*/
 .forsidetekst{
     width: 40%;
@@ -268,7 +326,7 @@ button {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
-    height: 800px;
+    height: 900px;
     background-color: #9C5238;
     padding-top: 100px;
     }
@@ -290,14 +348,14 @@ button {
     
     .infotekst h3{
         font-family: 'Montserrat',sans-serif;
-        font-size: 30px;
+        font-size: 40px;
         color: #fff;
     }
     
     .infotekst p{
         color: #fff;
         font-family: "Montserrat", sans-serif;
-        font-size: 15px;
+        font-size: 20px;
         padding-top: 35px;
     }
     
@@ -340,6 +398,7 @@ button {
    .venstrebillede{
     width: 32%;
     height: 100%;
+    background-color: #fff;
    }
    .midtbillede{
     width: 32%;
@@ -348,6 +407,7 @@ button {
    .højrebillede{
     width: 32%;
     height: 100%;
+    background-color: #000;
    }
    /*-----Herunder laver jeg CSS til selve billede boksene-----*/
    .lillebillede{
@@ -368,3 +428,5 @@ button {
    .storbillede img{
     width: 100%;
    }
+
+   /*-------------------------------Herunder er CSS til Processiden----------------------------------*/
