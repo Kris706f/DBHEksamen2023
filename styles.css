@@ -31,6 +31,7 @@
     width: 100%;
     z-index: 2;
 }
+
 /*Under her er CSS til vores Footer*/
 footer{
     width: 100%;
@@ -398,7 +399,6 @@ button {
    .venstrebillede{
     width: 32%;
     height: 100%;
-    background-color: #fff;
    }
    .midtbillede{
     width: 32%;
@@ -407,7 +407,6 @@ button {
    .højrebillede{
     width: 32%;
     height: 100%;
-    background-color: #000;
    }
    /*-----Herunder laver jeg CSS til selve billede boksene-----*/
    .lillebillede{
@@ -430,3 +429,145 @@ button {
    }
 
    /*-------------------------------Herunder er CSS til Processiden----------------------------------*/
+   .processide{
+
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 5;
+
+   }
+   .processide img{
+    height: 100%;
+    padding-top: 2%;
+    z-index: 6;
+   }
+   .procestekst{
+    width: 50%;
+    height: 200px;
+    margin-top: 5%;
+    z-index: 6;
+    background-color: #9C5238;
+    padding-left: 10px;
+   }
+   .procesanimate{
+    width: 50%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    z-index: 6;
+    background-color: #9C5238;
+   }
+   h6{
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    word-spacing: 5px;
+    font-style: italic;
+    z-index: 6;
+   }
+   .procesvenstre{
+    width: 45%;
+    height: 95%;
+    background-color: red;
+    z-index: 6;
+   }
+   .proceshøjre{
+    width: 45%;
+    height: 95%;
+    background-color: blue;
+    z-index: 6;
+   }
+   #procesbaggrund{
+        background-image: url(images/baggrundstreg.png);
+        z-index: 1;
+   }
+
+
+   /*-------Herunder er der CSS til vores FIND OS--------*/
+   .kontakt{
+    background-color: #9C5238;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 2%;
+   }
+
+.ikonboks{
+    width: 30%;
+    height: 400px;
+}
+#pladsholder{
+    width: 30%;
+    margin-left: 35%;
+    height: 125px;
+    background-color: coral;
+
+}
+.ikonboks h3{
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 45px;
+    text-align: center;
+}
+.ikonboks p{
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    padding-top: 2%;
+    text-align: center;
+}
+.lokation{
+    width: 100%;
+    height: 800px;
+    background-color: #9C5238;
+}
+.lokationoverskrift{
+    width: 100%;
+    height: 150px;
+    text-align: center;
+}
+.lokationoverskrift h3{
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+}
+.lokationoverskrift p{
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+}
+.stederne{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.bokssted{
+    width: 48%;
+    height: 600px;
+    text-align: center;
+}
+.bokssted h3{
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 45px;
+    font-weight: 400;
+    padding-top: 2%;
+}
+.bokssted p{
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+}
+#pladslokation{
+    width: 100%;
+    height: 450px;
+    background-color: darkgreen;
+    border-radius: 10px;
+}
