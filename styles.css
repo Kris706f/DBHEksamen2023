@@ -571,3 +571,152 @@ button {
     background-color: darkgreen;
     border-radius: 10px;
 }
+.beskedomrade{
+    width: 100%;
+    height: 800px;
+    background-color: #9C5238;
+}
+.beskedomradeoverskrift{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+.beskedomradeoverskrift h3{
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 45px;
+    font-weight: 400;
+}
+.beskedomradeoverskrift p{
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+}
+.beskedomradeboks{
+    width: 100%;
+    height: 500px;
+}
+/*---Herunder har vi til vores kontaktform---*/
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  label{
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+  }
+  
+  .container {
+    border-radius: 5px;
+    padding: 20px;
+    width: 60%;
+    margin-left: 20%;
+  }
+  .beskedomradeknap{
+
+    width: 30%;
+    height: 50px;
+    padding: 20px;
+    margin-left: 20%;
+    display: flex;
+  }
+  .beskedomradeknap h3{
+    color: #fff;
+    padding-left: 5%;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .beskedomrade button{
+    width: 10%;
+    margin-left: 45%;
+  }
+    
+
+  /*------------------Herunder er der CSS til "Acceptere vilkårene"------------*/
+  .cbx {
+    position: relative;
+    top: 1px;
+    width: 27px;
+    height: 27px;
+    border: 1px solid #c8ccd4;
+    border-radius: 3px;
+
+    transition: background 0.1s ease;
+    cursor: pointer;
+    display: block;
+   }
+   
+   .cbx:after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 8px;
+    width: 7px;
+    height: 14px;
+    opacity: 0;
+    transform: rotate(45deg) scale(0);
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    transition: all 0.3s ease;
+    transition-delay: 0.15s;
+   }
+   
+   .lbl {
+    margin-left: 5px;
+    vertical-align: middle;
+    cursor: pointer;
+   }
+   
+   #cbx:checked ~ .cbx {
+    border-color: transparent;
+    background: #8E9F99;
+    animation: jelly 0.6s ease;
+   }
+   
+   #cbx:checked ~ .cbx:after {
+    opacity: 1;
+    transform: rotate(45deg) scale(1);
+   }
+   
+   
+   
+   @keyframes jelly {
+    from {
+     transform: scale(1, 1);
+    }
+   
+    30% {
+     transform: scale(1.25, 0.75);
+    }
+   
+    40% {
+     transform: scale(0.75, 1.25);
+    }
+   
+    50% {
+     transform: scale(1.15, 0.85);
+    }
+   
+    65% {
+     transform: scale(0.95, 1.05);
+    }
+   
+    75% {
+     transform: scale(1.05, 0.95);
+    }
+   
+    to {
+     transform: scale(1, 1);
+    }
+   }
+   
+   .hidden-xs-up {
+    display: none!important;
+   }
+   
