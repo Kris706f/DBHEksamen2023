@@ -12,3 +12,13 @@ menu_btn.addEventListener('click', function(){
 
 let currentSection = "";
 
+
+
+
+function toggleCards() {
+    var kortElementer = document.querySelectorAll('.proces .cirkel');
+
+    kortElementer.forEach(function (kort) {
+        kort.classList.toggle('synlig');
+    });
+}
