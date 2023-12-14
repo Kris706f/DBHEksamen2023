@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
 }
-@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
 /*-----Under her er CSS til vores header------*/
@@ -194,7 +193,7 @@ hr {
 .produktside{
     width: 100%;
     height: 600px;
-    background-image: url(images/butik.png);
+    background-image: url(images/davidogbrod.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -247,7 +246,7 @@ hr {
     padding-bottom: 5%;
 }
 .korttekst{
-    width: 40%;
+    width: 50%;
     height: 400px;
     position: absolute;
     top: 150px;
@@ -321,7 +320,9 @@ button {
     font-size: 18px;
     transition: all 0.3s ease-in;
    }
-
+   button a{
+    text-decoration: none;
+   }
 
    /*------ Her CSS til bagsammen side - Frederik -------*/
 .infoside{ 
@@ -330,7 +331,6 @@ button {
     width: 100%;
     height: 900px;
     background-color: #9C5238;
-    padding-top: 100px;
     }
     .infotekst{
         width: 40%;
@@ -365,7 +365,7 @@ button {
         border-collapse: collapse;
         width: 90%;
         margin-top: 50px;
-        margin-bottom: 50px;
+        margin-bottom: 20px;
     
     }
     
@@ -450,7 +450,6 @@ button {
     margin-top: 3%;
     z-index: 6;
     background-color: #9C5238;
-    padding-left: 10px;
    }
    .procesanimate{
     width: 50%;
@@ -560,7 +559,6 @@ button {
   }
   .cirkel {
     --product-color: #5c8073;
-    display: none;
   }
   .synlig {
     display: block;
@@ -573,6 +571,7 @@ button {
     display: flex;
     justify-content: space-evenly;
     z-index: 5;
+    padding-top: 15%;
     background-color: #9C5238;
    }
    #procesbaggrund{
@@ -596,7 +595,7 @@ button {
     width: 30%;
     height: 400px;
 }
-#pladsholder{
+.pladsholder{
     width: 100px;
     margin-left: 35%;
     height: 100px;
@@ -664,7 +663,7 @@ button {
     width: 100%;
     border-radius: 10px;
 }
-#pladslokation{
+.pladslokation{
     width: 100%;
     height: 450px;
     border-radius: 10px;
@@ -690,6 +689,7 @@ button {
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     font-weight: 200;
+    padding-top: 2%;
 }
 .beskedomradeboks{
     width: 100%;
@@ -829,13 +829,13 @@ input[type=text], select, textarea {
    /*--MOBIL LAYOUT--*/
 @media screen and (max-width:874px){
     /*Header*/
-    #findlink{
+    .findlink{
         display: none;
     }
-    #laptoplogo{
+    .laptoplogo{
         display: none;
     }
-    #mobillogo{
+    .mobillogo{
         display: block;
     }
     .mobile-nav{
@@ -882,7 +882,7 @@ input[type=text], select, textarea {
         margin-left: 15%;
         padding-top: 2%;
     }
-    #laptopbillede{
+    .laptopbillede{
         display: none;
     }
     /*Infosiderne*/
@@ -991,7 +991,7 @@ input[type=text], select, textarea {
     .bokssted p{
         font-size: 15px;
     }
-    #laptopskrift{
+    .laptopskrift{
         display: none;
     }
     .beskedomradeoverskrift h3{
@@ -1035,7 +1035,6 @@ input[type=text], select, textarea {
     height: 50%;
    }
    .processide button{
-    background-color: red;
     width: 50%;
     margin-left: 25%;
    }
@@ -1064,14 +1063,17 @@ input[type=text], select, textarea {
 
 /*--LAPTOP LAYOUT--*/
 @media screen and (min-width:874px){
-    #mobillogo{
+    .mobillogo{
         display: none;
     }
-    #mobilbillede{
+    .mobilbillede{
         display: none;
     }
-    #mobilskrift{
+    .mobilskrift{
         display: none;
+    }
+    .procestekst{
+       padding: 20px 40px;
     }
 
 }
