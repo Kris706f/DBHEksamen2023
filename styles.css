@@ -172,11 +172,11 @@ hr {
     justify-content: space-evenly;
 }
 .venstreforside{
-    width: 45%;
+    width: 48%;
     height: 100%;
    }
    .højreforside{
-    width: 45%;
+    width: 48%;
     height: 100%;
    }
 .venstreforside img{
@@ -268,7 +268,7 @@ hr {
     padding-bottom: 5%;
 }
 /*---Herunder er til selve knappen i toppen af vores sider---*/
-button {
+.knap{
     display: inline-block;
     width: 200px;
     height: 50px;
@@ -279,11 +279,12 @@ button {
     transition: all 0.5s ease-in;
     background-color: transparent;
     cursor: pointer;
+    text-decoration: none;
     z-index: 1;
    }
    
-   button::before,
-   button::after {
+   .knap::before,
+   .knap::after {
     content: '';
     position: absolute;
     top: 0;
@@ -295,41 +296,44 @@ button {
     z-index: -1;
    }
    
-   button::before {
+   .knap::before {
     left: -10px;
     background: #8E9F99;
    }
    
-   button::after {
+   .knap::after {
     right: -10px;
     background: #5c8073;
    }
    
-   button:hover::before,
-   button:hover::after {
+   .knap:hover::before,
+   .knap:hover::after {
     width: 58%;
    }
    
-   button:hover span {
+   .knap:hover span {
     color: #fff;
     transition: 0.3s;
    }
    
-   button span {
+   .knap span {
     color: #fff;
-    font-size: 18px;
+    font-size: 20px;
     transition: all 0.3s ease-in;
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+    font-family: 'Montserrat',sans-serif;
    }
-   button a{
-    text-decoration: none;
-   }
+
+
 
    /*------ Her CSS til bagsammen side - Frederik -------*/
 .infoside{ 
     display: flex;
     justify-content: space-evenly;
     width: 100%;
-    height: 900px;
+    height: 800px;
     background-color: #9C5238;
     }
     .infotekst{
@@ -471,7 +475,7 @@ button {
 
    /*--------Kort animation herunder---------*/
    .kort{
-    font-family: Lato, sans-serif;
+    font-family: 'Montserrat',sans-serif;
     position: relative;
     width: 350px;
     height: 420px;
@@ -572,7 +576,7 @@ button {
     justify-content: space-evenly;
     z-index: 5;
     padding-top: 15%;
-    background-color: #9C5238;
+    
    }
    #procesbaggrund{
         background-image: url(images/baggrundstreg.png);
@@ -694,6 +698,12 @@ button {
 .beskedomradeboks{
     width: 100%;
     height: 500px;
+}
+.beskedomradesend{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
 }
 /*---Herunder har vi til vores kontaktform---*/
 input[type=text], select, textarea {
@@ -819,11 +829,36 @@ input[type=text], select, textarea {
     display: none!important;
    }
    
+   /*---------Countdown CSS----------------*/
+.countdown{
+    width: 100%;
+    height: 200px;
+    background-color: #9C5238;
+}
+.countdown p{
+    text-align: center;
+    font-size: 120px;
+    color: #fff;
+    font-family: 'Cabin Sketch', sans-serif;
+}
+.countdown h2{
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
 
 
+.countdown{
+    height: 200px;
+}
+.countdown p{
+    font-size: 120px;
+}
+.countdown h2{
+    font-size: 20px;
 
-
-
+}
 
    /*-----------RESPONSIVE-----------*/
    /*--MOBIL LAYOUT--*/
@@ -1054,7 +1089,20 @@ input[type=text], select, textarea {
    .content{
     width: 100%;
    }
+   /*------Countdown------*/
+.countdown{
+    height: 100px;
+}
+.countdown p{
+    font-size: 50px;
+}
+.countdown h2{
+    font-size: 10px;
 
+}
+.broedtekst{
+    visibility: visible;
+}
 
 
 
@@ -1075,5 +1123,4 @@ input[type=text], select, textarea {
     .procestekst{
        padding: 20px 40px;
     }
-
 }
